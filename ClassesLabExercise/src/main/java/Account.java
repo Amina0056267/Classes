@@ -16,18 +16,36 @@ public class Account {
 
 //    METHODS
 
-    public int getBalance() {
-        return 100;
+    public String getId(){
+        return id;
+    }
+    public void setId(String id) {
+         this.id = id;}
+
+   public String getName(){
+        return name;
+   }
+
+    public String setName() {
+        return this.name;
     }
 
+    public int getBalance() {
+        return balance;
+    }
 
-    public String setId() { return this.id; }
-    public String setName() { return this.name; }
+    public void getName(String name) {
+        this.name = name;}
 
-    public void getName(String name) { this.name = name;}
-
+    public void setBalance(int balance){
+        this.balance = balance;
+    }
 
     public void greet( String welcomeMessage) {
         System.out.println("Welcome to your account!");
     }
-}
+
+
+    }
+
+
